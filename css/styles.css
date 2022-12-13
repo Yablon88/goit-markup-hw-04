@@ -330,12 +330,18 @@ border-radius: 0px 0px 4px 4px;
     display: flex;
    justify-content: center;
    gap: 24px;
-}
+   }
+
 .workers-social-networks{
+    display: flex;
     width: 40px;
     height: 40px;
 
+    border-radius: 50%;
+    background-color: var(--Primary-Brand-color);
+    text-align: center;
 }
+
 
 
 
@@ -407,15 +413,39 @@ letter-spacing: 0.04em;
 
   
 .customers-list {
+    display: flex;
+       gap: 24px;
 }
+
 .customers-line {
+    width: 168px;
+    height: 88px;
+    
 }
+
 .customers-link {
+    display: flex;
+    padding: 16px 32px;
+    
+    
+    color: var(--Subtle-Text-color);
+    border: 1px solid var(--Subtle-Text-color);
+    border-radius: 4px;
+  
 }
+
+.customers-link:hover,
+.customers-link:focus {
+    color: var(--Primary-Brand-color); 
+    border-color: var(--Primary-Brand-color); 
+}
+
 .customers-logo {
-}
-
-
+        fill: currentColor;
+        width: 104px;
+        height: 56px;
+    
+   }
 
 
 
@@ -444,8 +474,7 @@ letter-spacing: 0.04em;
     
 
     .project:hover, .project:focus{
-        box-shad
-        ow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     }
 
     .project img{
@@ -477,12 +506,8 @@ padding-top: 16px;
 .footer-logo{
     margin-right: 120px;
 }
-.footer-icon-list{
-    display: flex;
-     max-width: 210px;
-     gap: 16px;
-   
-}
+  
+
 .footer .studio{
     color: var(--primary-white-color);
 }
@@ -502,13 +527,26 @@ letter-spacing: 0.02em;
 color: var(--primary-white-color);
 margin-bottom: 16px;
 }
-.footer-social-networks{
-    width: 40px;
-    height: 40px;
-    }
- 
 
-.footer-social-networks .icon:hover, .footer-social-networks .icon:focus{
-    background-color: var(--Success-color);
+ .footer-icon-list {
+     display: flex;
+       gap: 16px;
 }
 
+.footer-links {
+    display: flex;
+    width: 40px;
+    height: 40px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+     fill: currentColor
+}
+.footer-links:hover, .footer-links:focus{
+    background-color: var(--Success-color);
+    cursor: pointer;
+
+}
